@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"219","Source":"Form","Properties":{"$Name":"PUBLICIDAD","$Type":"Form","$Version":"30","AppName":"SatelitalV01","ShowListsAsJson":"False","Title":"PUBLICIDAD","Uuid":"0","$Components":[{"$Name":"Disposici\u00f3nHorizontal1","$Type":"HorizontalArrangement","$Version":"4","Height":"-2","Width":"-2","Uuid":"2119332766","$Components":[{"$Name":"VisorWeb1","$Type":"WebViewer","$Version":"10","HomeUrl":"https:\/\/aregonet.com\/publicidad2.html","Uuid":"1806538319"}]},{"$Name":"Reloj1","$Type":"Clock","$Version":"4","TimerInterval":"8000","Uuid":"-1288600530"}]}}
+|#

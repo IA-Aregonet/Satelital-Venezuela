@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Antena Simple TV Simpletv Amazonas Satelital  alinear alineacion tv parrilla venezuela</title>
+
+	<meta charset="utf-8" />
+<meta name="author" content="aregonet">
+ <meta name="description" content="antena de simpletv, directv Con esta herramienta podrás alinear tu antena satelital con el satelite.">
+ <meta name="keywords" content="antena, satelital, simpletv, directv,"/>
+ <meta property="og:image" content="https://aregonet.com/AREGONET.png">
+  <meta name="robots" content="index"/>
+  <meta name="googlebot" content="index" />
+  <meta name="robots"  content="index,follow"  />
+<link rel="shortcut icon" type="image/x-icon" href="https://aregonet.com/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script src="https://npmcdn.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://npmcdn.com/leaflet.path.drag/src/Path.Drag.js"></script>
+    <script src="../Leaflet.Editable.js"></script>
+<link rel="stylesheet" href="./leaflet.measure.css"/>
+    <script src="./leaflet.measure.js"></script>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 600px;
+			height: 400px;
+		}
+	</style>
+
+	<style>body { padding: 0; margin: 0; } #map { height: 100%; width: 100vw; }</style>
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+var startPoint = [6.887209235428714, -66.47245457487304];
+	var map = L.map('map', {editable: true}).setView(startPoint, 16),
+    tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 20, attribution: 'Data \u00a9 <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles \u00a9 HOT'}).addTo(map);
+
+	function onLocationFound(e) {
+		var radius = e.accuracy / 2;
+
+		L.marker(e.latlng).addTo(map)
+			.bindPopup("Tu Antena " + radius + " Esta Alineada").openPopup();
+
+		L.circle(e.latlng, radius).addTo(map);
+		   var line = L.polyline([(e.latlng),[4.323629164790858, -79.11891952791616],
+        
+    ]).addTo(map);
+	 var plugin = L.control.measure({
+        //  control position
+        position: 'topleft',
+        //  weather to use keyboard control for this plugin
+        keyboard: true,
+        //  shortcut to activate measure
+        activeKeyCode: 'M'.charCodeAt(0),
+        //  shortcut to cancel measure, defaults to 'Esc'
+        cancelKeyCode: 27,
+        //  line color
+        lineColor: 'red',
+        //  line weight
+        lineWeight: 2,
+        //  line dash
+        lineDashArray: '6, 6',
+        //  line opacity
+        lineOpacity: 1,
+        //  distance formatter
+        // formatDistance: function (val) {
+        //   return Math.round(1000 * val / 1609.344) / 1000 + 'mile';
+        // }
+      }).addTo(map)
+
+	}
+
+	function onLocationError(e) {
+		alert(e.message);
+	}
+
+	map.on('locationfound', onLocationFound);
+	map.on('locationerror', onLocationError);
+
+	map.locate({setView: true, maxZoom: 16});
+	
+</script>
+
+
+
+</body>
+</html>

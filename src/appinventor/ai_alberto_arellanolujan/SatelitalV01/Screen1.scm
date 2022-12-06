@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"219","Source":"Form","Properties":{"$Name":"Screen1","$Type":"Form","$Version":"30","AlignHorizontal":"3","AppName":"SATELITAL","Icon":"PARABOLICA.png","ShowListsAsJson":"False","Title":"INTRO","TitleVisible":"False","Uuid":"0","VersionCode":"8","VersionName":"8.1","$Components":[{"$Name":"Disposici\u00f3nHorizontal1","$Type":"HorizontalArrangement","$Version":"4","BackgroundColor":"&HFFF5F5F5","Height":"-2","Width":"-2","Uuid":"1263599219","$Components":[{"$Name":"VisorWeb1","$Type":"WebViewer","$Version":"10","HomeUrl":"file:\/\/\/android_asset\/logo.html","Uuid":"589793195"}]},{"$Name":"Reloj1","$Type":"Clock","$Version":"4","TimerAlwaysFires":"False","TimerEnabled":"False","TimerInterval":"7000","Uuid":"384975715"}]}}
+|#

@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"219","Source":"Form","Properties":{"$Name":"GUIAMOVISTAR","$Type":"Form","$Version":"30","AppName":"SatelitalV01","ScreenOrientation":"landscape","ShowListsAsJson":"False","Title":"GUIA MOVISTAR","Uuid":"0","$Components":[{"$Name":"Disposici\u00f3nHorizontal1","$Type":"HorizontalArrangement","$Version":"4","Height":"-1075","Width":"-2","Uuid":"893671111","$Components":[{"$Name":"VisorWeb1","$Type":"WebViewer","$Version":"10","Height":"-2","Width":"-2","HomeUrl":"file:\/\/\/android_asset\/guiainter.html","Uuid":"85392257"}]},{"$Name":"Disposici\u00f3nHorizontal2","$Type":"HorizontalArrangement","$Version":"4","AlignHorizontal":"3","AlignVertical":"2","BackgroundColor":"&HFF000000","Height":"-2","Width":"-2","Uuid":"-1250238742","$Components":[{"$Name":"Bot\u00f3n1","$Type":"Button","$Version":"7","Shape":"1","Text":"MENU","Uuid":"540223398"}]}]}}
+|#
